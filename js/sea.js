@@ -39,7 +39,7 @@ particlesJS('depth1',
 
       },
       "size": {
-        "value": 3,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,

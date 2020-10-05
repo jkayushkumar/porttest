@@ -39,7 +39,7 @@ particlesJS('surface',
 
       },
       "size": {
-        "value": 2,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": true,
