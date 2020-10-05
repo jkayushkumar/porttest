@@ -85,7 +85,7 @@ function diveOUT()
             document.getElementById("diveIn").classList.remove("noDisplay");
             $('html, body').animate({scrollTop: $("#surface").offset().top}, 1500);
             window.setTimeout(function (){
-                document.getElementsByTagName('meta')["theme-color"].content = "#1F3B73";
+                document.getElementsByTagName('meta')["theme-color"].content = "#010825";
                 document.getElementById("diveOut").classList.remove("noClick");
                 updatingCSS=false;
             },1500);
