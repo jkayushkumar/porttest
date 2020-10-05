@@ -10,7 +10,7 @@ body{
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
 }
-input,textarea,button,select,a,div {
+input,textarea,button,select,a,div,img {    
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 section{overflow: hidden;}
@@ -97,7 +97,8 @@ section{overflow: hidden;}
 #surface{
     position: absolute;z-index: 0;
     height: 85.5%;width: 100%;top: 0;
-    background-image: url("../images/web/sky.png");
+    /* background-image: url("../images/web/sky.png"); */
+    background-image: linear-gradient(#010825,#1e2949,#323e68,#3d5183,#2d8cea);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,16 +107,18 @@ section{overflow: hidden;}
     position: absolute;z-index: -2;
     height: 3%;width: 100%;bottom: 0;
     background-image: url("../images/web/surfaceWave.png");
+    /* background-color: #C0B2A7; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 3px 6px #b6e1f2b4 inset;
+    box-shadow: 0px 3px 6px #eff2f386 inset;
 }
 #sailboat{
     position: absolute;z-index: -1;
     bottom: 0;left: 5%;
     height: 40%;
     content: url("../images/web/sailboat.png");
+    opacity: 0.7;
 }
 .noSeaSurface{
     top: 0;
@@ -155,19 +158,20 @@ section{overflow: hidden;}
 .droplets1{
     position: absolute;top: 0;
     background-image:url("../images/web/webDepth1.png");
+    /* background-image: linear-gradient(#C0B2A7,#95A7A0,#609297,#609297,#609297,#609297); */
     background-size: 100% 100%;
 }
 .droplets2{
     position: absolute;top: 33.33%;
     background-image:url("../images/web/webDepth2_2.png");
-    /* background-image: linear-gradient(var(--sea3),var(--sea4)); */
+    /* background-image: linear-gradient(#609297,#609297,var(--sea3)); */
     background-size: 100% 100%;
 }
 
 .droplets3{
     position: absolute;top: 66.66%;
     background-image:url("../images/web/webDepth3_2.png");
-    /* background-image: linear-gradient(var(--sea4),var(--sea5)); */
+    /* background-image: linear-gradient(#558792,#3B5E83); */
     background-size: 100% 100%;
 }
 #diveIn{

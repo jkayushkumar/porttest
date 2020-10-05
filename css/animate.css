@@ -3,16 +3,19 @@
     position: absolute;width: 2%;z-index: 3;
     content: url("../images/gif/goldfish.gif");    
     animation: swim2Left 20s linear infinite;    
+    opacity: 0.8;
 }
 .fish2{ 
     position: absolute;width: 3%;z-index: 3;
     content: url("../images/gif/fish2.gif");    
     animation: swim2Right 30s linear infinite;
+    opacity: 0.7;
 }
 .orca{ 
     position: absolute;width: 8%;z-index: 3;
     content: url("../images/gif/orca.gif");    
     animation: swim2Right2 30s linear infinite;
+    opacity: 0.8;
 }
 .orca2{ 
     position: absolute;width: 8%;z-index: 3;

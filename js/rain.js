@@ -3,7 +3,7 @@ particlesJS('surface',
   {
     "particles": {
       "number": {
-        "value": 200,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 900
@@ -31,8 +31,8 @@ particlesJS('surface',
         "value": 0.4,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 1,
+          "enable": true,
+          "speed": 10,
           "opacity_min": 0.1,
           "sync": false
         }
@@ -40,7 +40,7 @@ particlesJS('surface',
       },
       "size": {
         "value": 2,
-        "random": false,
+        "random": true,
         "anim": {
           "enable": true,
           "speed": 15,
@@ -57,9 +57,9 @@ particlesJS('surface',
       },
       "move": {
         "enable": true,
-        "speed": 10,
-        "direction": "bottom-right",
-        "random": false,
+        "speed": 1,
+        "direction": "none",
+        "random": true,
         "straight": true,
         "out_mode": "out",
         "attract": {
@@ -73,11 +73,11 @@ particlesJS('surface',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true

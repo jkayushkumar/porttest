@@ -2,7 +2,8 @@
 .drone{
     position: absolute;
     z-index: 6;
-    transform: scale(0.2);     
+    transform: scale(0.2);    
+    opacity: 0.8; 
     animation: droneFly 45s linear 0s infinite;
 }
 .droneArm1{
