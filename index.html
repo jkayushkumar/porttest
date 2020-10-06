@@ -12,9 +12,11 @@
         <link rel="stylesheet" href="css/style.css">  
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/material.css">
+        <link rel="stylesheet" href="css/modal/modal.css">
         <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>         
         <script type="text/javascript" src="js/particles.min.js"></script>       
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/modal/modal.js"></script>
         <script>  
             window.onbeforeunload = function () {
                 window.scrollTo(0, 0);
@@ -28,12 +30,11 @@
                 <p class="head">I fuse technology with creativity</p>
                 <P class="intro noDisplay"></p>
                 <div class="quickLinks">
-                    <div id="contact" class="ripple">Contact</div>
+                    <div id="contact" class="ripple" onclick="showContactModal()">Contact</div>
                     <div id="resume" class="ripple" onclick="window.open('https://drive.google.com/file/d/179brw9AwiB-KBloK-78VqzjPknQCs0ye/view?usp=sharing','_blank')">Resume</div>
                     <div id="portfolio" class="ripple">Portfolio PDF</div>
                 </div>
-            </div>   
-            <div id="go">Have a glance at my work ... just ‘Dive In’</div>
+            </div>
             <div class="seaWave"></div>
             <div id="sailboat" class="sailboatAnimate"></div>
             <div class="drone">
@@ -81,6 +82,7 @@
             </div>
         </div> 
         <script src="js/rain.js"></script> 
+        <div id="go">To have a glance at my work</div>
         <div id="diveOut"onclick="diveOUT()" class="noDisplay">Dive Out</div>  
         <div id="diveIn"onclick="diveIN()">Dive In</div>
         <div id="sea">
@@ -103,6 +105,20 @@
             <script src="js/sea3.js"></script>
         </div>
         <script src="js/sea.js"></script>
-                
+        <!-- Modals----------- -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <div class="contactImg"></div>
+                <div class="contactHold">
+                    <div class="contactRow" onclick=""><img src="images/glyph/outlook.png" width="30px">&nbsp;&nbsp;&nbsp;ayush_kumar24@outlook.com</div><br/>
+                    <div class="contactRow" onclick=""><img src="images/glyph/call.png" width="30px">&nbsp;&nbsp;&nbsp;+91 8297278638</div><br/>
+                    <div class="contactRow" onclick=" window.open('https://www.linkedin.com/in/jkayushkumar/','_blank')"><img src="images/glyph/linkedIn.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br/>
+                    <div class="contactRow" onclick=" window.open('https://www.behance.net/jkayushkumar','_blank')"><img src="images/glyph/behance.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br/>
+                    <div class="contactRow" onclick=" window.open('https://github.com/jkayushkumar','_blank')"><img src="images/glyph/github.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br/>
+                    <div class="contactRow" onclick=" window.open('https://www.instagram.com/ayushkumar.in/','_blank')"><img src="images/glyph/instagram.png" width="30px">&nbsp;&nbsp;&nbsp;ayushkumar.in</div><br/>
+                </div>
+                <!-- <div class="close" onclick="contactClose()">&times;</div> -->
+            </div>           
+        </div>                
     </body>
 </html>

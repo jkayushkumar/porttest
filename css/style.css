@@ -34,15 +34,6 @@ section{overflow: hidden;}
     font-size: 16px;
     text-align: justify;
 }
-#go{
-    position: absolute; padding: 10px;
-    left: 50%;transform: translateX(-50%);
-    bottom: 4%;width: 80%;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--theme1-c-active);
-    text-align: center;
-}
 .quickLinks{
     position: absolute;
     left: 50%;transform: translateX(-50%);
@@ -50,7 +41,7 @@ section{overflow: hidden;}
 }
 #contact{
     float: left;padding: 10px;
-    border: 1px solid var(--theme1-c-active);
+    border: 0.5px solid var(--theme1-c-active);
     color: var(--theme1-c-active);
     font-size: 16px;
     text-align: center;
@@ -61,7 +52,7 @@ section{overflow: hidden;}
 
 #resume{
     float: left;margin-left: 10px;padding: 10px;
-    border: 1px solid var(--theme1-c-active);
+    border: 0.5px solid var(--theme1-c-active);
     color: var(--theme1-c-active);
     font-size: 16px;
     text-align: center;
@@ -71,7 +62,7 @@ section{overflow: hidden;}
 }
 #portfolio{
     float: left;margin-left: 10px;padding: 10px;
-    border: 1px solid var(--theme1-c-active);
+    border: 0.5px solid var(--theme1-c-active);
     color: var(--theme1-c-active);
     font-size: 16px;
     text-align: center;
@@ -174,6 +165,16 @@ section{overflow: hidden;}
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
+#go{
+    position: fixed; z-index:2;
+    padding: 10px;bottom: 8%;
+    left: 50%;transform: translateX(-50%);
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--theme1-c-active);
+    text-align: center;
+}
 #diveIn{
     position: fixed;z-index: 2;cursor: pointer;
     padding: 12px;bottom:3%;
@@ -220,6 +221,7 @@ section{overflow: hidden;}
     }
     #go{
         font-size: 14px;
+        bottom: 10%;
     }
     #contact{font-size: 12px;}
     #resume{font-size: 12px;}
@@ -245,7 +247,7 @@ section{overflow: hidden;}
     }
     #go{
         font-size: 14px;
-        bottom: 2%;
+        bottom: 10%;
     }
     #contact{font-size: 12px;}
     #resume{font-size: 12px;}

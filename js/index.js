@@ -17,14 +17,15 @@ function diveIN()
         var depth3=(document.getElementById("depth3").classList.contains("ontop"));
         if(!depth1 && !depth2 && !depth3)
         {   
+            document.getElementById("go").classList.add("noDisplay");
             document.getElementById("depth1").classList.add("ontop");
             document.getElementById("depth2").classList.remove("ontop");
-            document.getElementById("depth3").classList.remove("ontop");
-            document.getElementById("diveOut").classList.remove("noDisplay");
+            document.getElementById("depth3").classList.remove("ontop");            
             $('html, body').animate({scrollTop: $("#depth1").offset().top}, 1500);
             window.setTimeout(function (){
                 document.getElementsByTagName('meta')["theme-color"].content = "#0da3d5"; 
-                document.getElementById("surface").classList.add("noDisplay");
+                document.getElementById("surface").classList.add("noDisplay"); 
+                document.getElementById("diveOut").classList.remove("noDisplay");               
                 document.getElementById("diveIn").classList.remove("noClick");
                 updatingCSS=false;
             },1500);
@@ -77,7 +78,7 @@ function diveOUT()
         }
         if(depth1 && !depth2 && !depth3)
         {
-            document.getElementById("surface").classList.remove("noDisplay");
+            document.getElementById("surface").classList.remove("noDisplay");            
             document.getElementById("depth1").classList.remove("ontop");
             document.getElementById("depth2").classList.remove("ontop");
             document.getElementById("depth3").classList.remove("ontop");
@@ -86,6 +87,7 @@ function diveOUT()
             $('html, body').animate({scrollTop: $("#surface").offset().top}, 1500);
             window.setTimeout(function (){
                 document.getElementsByTagName('meta')["theme-color"].content = "#010825";
+                document.getElementById("go").classList.remove("noDisplay");
                 document.getElementById("diveOut").classList.remove("noClick");
                 updatingCSS=false;
             },1500);
