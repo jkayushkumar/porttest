@@ -163,15 +163,15 @@ section{overflow: hidden;}
 }
 .droplets2{
     position: absolute;top: 33.33%;
-    background-image:url("../images/web/webDepth2_2.png");
-    /* background-image: linear-gradient(#609297,#609297,var(--sea3)); */
+    /* background-image:url("../images/web/webDepth2_2.png"); */
+    background-image: linear-gradient(var(--sea3),var(--sea4));
     background-size: 100% 100%;
 }
 
 .droplets3{
     position: absolute;top: 66.66%;
-    background-image:url("../images/web/webDepth3_2.png");
-    /* background-image: linear-gradient(#558792,#3B5E83); */
+    /* background-image:url("../images/web/webDepth3_2.png"); */
+    background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
 #diveIn{
