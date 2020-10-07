@@ -31,7 +31,7 @@
                 <P class="intro noDisplay"></p>
                 <div class="quickLinks">
                     <div id="contact" class="ripple" onclick="showContactModal()">Contact</div>
-                    <div id="resume" class="ripple" onclick="window.open('https://drive.google.com/file/d/179brw9AwiB-KBloK-78VqzjPknQCs0ye/view?usp=sharing','_blank')">Resume</div>
+                    <div id="resume" class="ripple" onclick="showResumeModal()"">Resume</div>
                     <div id="portfolio" class="ripple">Portfolio PDF</div>
                 </div>
             </div>
@@ -117,8 +117,12 @@
                     <div class="contactRow" onclick=" window.open('https://github.com/jkayushkumar','_blank')"><img src="images/glyph/github.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br/>
                     <div class="contactRow" onclick=" window.open('https://www.instagram.com/ayushkumar.in/','_blank')"><img src="images/glyph/instagram.png" width="30px">&nbsp;&nbsp;&nbsp;ayushkumar.in</div><br/>
                 </div>
-                <!-- <div class="close" onclick="contactClose()">&times;</div> -->
             </div>           
-        </div>                
+        </div>  
+        <div id="resumeModal" class="modal">
+            <div class="pdf-content">
+                <iframe id="resumePDF" src="documents/Ayush.pdf#view=FitBH"  frameborder="0"></iframe>
+            </div>
+        </div>              
     </body>
 </html>

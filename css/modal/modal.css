@@ -17,6 +17,15 @@
     display: grid;
     place-items: center;
   }
+  .pdf-content{
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  #resumePDF{
+    border: 0;
+    height: 90vh;width: 60vw;
+  }
   .close {
     color: #aaaaaa;
     float: right;
@@ -32,9 +41,7 @@
   .contactImg{   
     position: absolute; 
     content: url("../../images/web/contact.png");
-    height: 40%;bottom: 10%;right:15%;
-    /* bottom: 2%;
-    right: 2%; */
+    height: 40%;bottom: 10%;right:10%;
   }
   .contactHold{
     padding: 1%;
@@ -48,6 +55,10 @@
 
   @media only screen and (max-width: 567px){
     .contactRow{font-size: 12px;}
+    #resumePDF{
+      border: 0;
+      height: 130vw;width: 90vw;/*A4 aspect ratio*/
+    }
   }
   @media only screen and (min-width: 568px) and (max-width: 1024px) {
     .contactRow{font-size: 12px;}
