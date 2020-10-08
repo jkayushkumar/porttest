@@ -24,15 +24,18 @@
         </script>
     </head>
     <body ontouchstart="">
+        <div class="quickLinks">
+            <div id="resume" class="quickLinkTab ripple" onclick="showResumeModal()"">Resume</div>
+            <div id="portfolio" class="quickLinkTab ripple">Portfolio PDF</div>
+            <div id="contact" class="quickLinkTab ripple" onclick="showContactModal()">Contact</div>
+        </div>
         <div id="surface">
             <div class="whoAmI">Ayush Kumar
                 <p class="head">Developer | Designer</p> 
                 <p class="head">I fuse technology with creativity</p>
                 <P class="intro noDisplay"></p>
-                <div class="quickLinks">
-                    <div id="contact" class="ripple" onclick="showContactModal()">Contact</div>
-                    <div id="resume" class="ripple" onclick="showResumeModal()"">Resume</div>
-                    <div id="portfolio" class="ripple">Portfolio PDF</div>
+                <div class="explore">
+                    <div class="quickLinkTab ripple" onclick="diveIN()">&nbsp;&nbsp;Explore&nbsp;&nbsp;</div>
                 </div>
             </div>
             <div class="seaWave"></div>
@@ -81,10 +84,9 @@
                 <div class="centerDisk"></div>
             </div>
         </div> 
-        <script src="js/rain.js"></script> 
-        <div id="go">To have a glance at my work</div>
-        <div id="diveOut"onclick="diveOUT()" class="noDisplay">Dive Out</div>  
-        <div id="diveIn"onclick="diveIN()">Dive In</div>
+        <script src="js/rain.js"></script>
+        <div id="diveOut"onclick="diveOUT()" class="dive ripple noDisplay">Dive Out</div>  
+        <div id="diveIn"onclick="diveIN()" class="dive ripple noDisplay">Dive In</div>
         <div id="sea">
             <div id="depth1" class="droplets1">                
                 <div id="fishLV1" class="goldfish"></div>

@@ -3,6 +3,7 @@
     --theme1-c-hover:#FEFEFE; --theme1-c-active:#FFFFFF;
     --paper1:#F2F2F2; --paper2:#D9D9D9; --paper3:#BFBFBF; --paper4:#595859;--paper5:#0D0D0D;
     --sea1:#07B2D9; --sea2:#11a8e4; --sea3:#0568A6; --sea4:#022340; --sea5:#011322;
+    --btn:#24990F;--btnHover:#2EE60E;
 }
 body{
     overflow:hidden;
@@ -10,9 +11,7 @@ body{
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
 }
-input,textarea,button,select,a,div,img {    
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
+input,textarea,button,select,a,div,img {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 section{overflow: hidden;}
 .whoAmI{
     position: absolute;top:25%;
@@ -23,73 +22,16 @@ section{overflow: hidden;}
     font-weight: 300;
     color: var(--theme1-c-active);
 }
-.head{
-    font-size: 24px;
-}
-.subhead
-{
-    font-size: 28px;
-}
+.head{font-size: 24px;}
+.subhead{font-size: 28px;}
 .intro{
     font-size: 16px;
     text-align: justify;
 }
-.quickLinks{
-    position: absolute;
-    left: 50%;transform: translateX(-50%);
-    min-width: fit-content;
-}
-#contact{
-    float: left;padding: 10px;
-    border: 0.5px solid var(--theme1-c-active);
-    color: var(--theme1-c-active);
-    font-size: 16px;
-    text-align: center;
-    display: flex;justify-content: center;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-#resume{
-    float: left;margin-left: 10px;padding: 10px;
-    border: 0.5px solid var(--theme1-c-active);
-    color: var(--theme1-c-active);
-    font-size: 16px;
-    text-align: center;
-    display: flex;justify-content: center;
-    cursor: pointer;
-    border-radius: 2px;
-}
-#portfolio{
-    float: left;margin-left: 10px;padding: 10px;
-    border: 0.5px solid var(--theme1-c-active);
-    color: var(--theme1-c-active);
-    font-size: 16px;
-    text-align: center;
-    display: flex;justify-content: center;
-    cursor: pointer;
-    border-radius: 2px;
-}
-.ripple {
-    background-position: center;
-    transition: background 0.8s;
-}
-    .ripple:hover {
-        background:var(--sea3) radial-gradient(circle, transparent 1%,var(--sea3) 1%) center/15000%;
-        border: 0px;
-    }
-    .ripple:active {
-        background-color:var(--sea2);
-        background-size: 100%;
-        transition: background 0s;
-        border: 0px;
-    }
-
 #surface{
     position: absolute;z-index: 0;
     height: 85.5%;width: 100%;top: 0;
-    /* background-image: url("../images/web/sky.png"); */
-    background-image: linear-gradient(#010825,#1e2949,#323e68,#3d5183,#2d8cea);
+    background-image: linear-gradient(#010825,#1e2949,#3d5183,#2d8cea);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,7 +40,6 @@ section{overflow: hidden;}
     position: absolute;z-index: -2;
     height: 3%;width: 100%;bottom: 0;
     background-image: url("../images/web/surfaceWave.png");
-    /* background-color: #C0B2A7; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -111,9 +52,7 @@ section{overflow: hidden;}
     content: url("../images/web/sailboat.png");
     opacity: 0.7;
 }
-.noSeaSurface{
-    top: 0;
-}
+.noSeaSurface{top: 0;}
 #sea{
     position: absolute;z-index: 1;
     width: 100%;
@@ -123,7 +62,8 @@ section{overflow: hidden;}
     background-size: 100% 100%;
 }
 #depth1{
-    height: 101vh;width: 100%;
+    height: 101vh;
+    width: 100%;
 }
 #join12{
     position: absolute;z-index: -1;
@@ -132,7 +72,8 @@ section{overflow: hidden;}
     background-color: var(--sea3);
 }
 #depth2{
-    height: 101vh;width: 100%;
+    height: 101vh;
+    width: 100%;
 }
 #join23{
     position: absolute;z-index: -1;
@@ -141,11 +82,10 @@ section{overflow: hidden;}
     background-color: var(--sea4);
 }
 #depth3{
-    height: 101vh;width: 100%;
+    height: 101vh;
+    width: 100%;
 }
-.ontop{
-    padding: 10px;
-}
+.ontop{padding: 10px;}
 .droplets1{
     position: absolute;top: 0;
     background-image:url("../images/web/webDepth1.png");
@@ -165,37 +105,58 @@ section{overflow: hidden;}
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
-#go{
-    position: fixed; z-index:2;
-    padding: 10px;bottom: 8%;
+.dive{
+    position: fixed;z-index: 2;cursor: pointer;
+    padding: 10px;
     left: 50%;transform: translateX(-50%);
-    width: 80%;
+    color: var(--theme1-c-active);
+    display: flex;text-align: center;justify-content: center;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: 400;
+ }
+#diveIn{bottom:2%;}
+#diveOut{top:2%;}
+.noClick{pointer-events:none;}
+.explore{
+    position: absolute;
+    left: 50%;transform: translateX(-50%);
+    min-width: fit-content;
+    background-image: linear-gradient(var(--sea1),var(--sea2));
+    border-radius: 2px;
+}
+.quickLinks{
+    position: fixed;z-index: 3;
+    right: 2%;top: 2%;
+    min-width: fit-content;
+}
+.quickLinkTab{
+    float: left;padding: 10px;
+    /* border: 0.5px solid var(--theme1-c-active); */
+    color: var(--theme1-c-active);
     font-size: 16px;
     font-weight: 400;
-    color: var(--theme1-c-active);
     text-align: center;
-}
-#diveIn{
-    position: fixed;z-index: 2;cursor: pointer;
-    padding: 12px;bottom:3%;
-    left: 50%;transform: translateX(-50%);
-    color: var(--theme1-c-active);
-    display: flex;text-align: center;justify-content: center;
-    font-size: 16px;
+    display: flex;justify-content: center;
+    cursor: pointer;
     border-radius: 2px;
 }
-#diveOut{
-    position: fixed;z-index: 2;cursor: pointer;
-    padding: 12px;top:3%;
-    left: 50%;transform: translateX(-50%);
-    color: var(--theme1-c-active);
-    display: flex;text-align: center;justify-content: center;
-    font-size: 16px;
-    border-radius: 2px;
+/* #contact{margin-left: 10px;}
+#portfolio{margin-left: 10px;} */
+.ripple {
+    background-position: center;
+    transition: background 0.6s;
 }
-.noClick{
-    pointer-events:none;
-}
+    .ripple:hover {
+        background:var(--sea2) radial-gradient(circle, transparent 1%,var(--sea2) 1%) center/15000%;
+        border: 0px;
+    }
+    .ripple:active {
+        background-color:var(--sea3);
+        background-size: 100%;
+        transition: background 0s;
+        border: 0px;
+    }
 .particles-js-canvas-el { z-index: 1; }
 
 /* mobile portrait */
@@ -205,27 +166,18 @@ section{overflow: hidden;}
     #sailboat{height: 30%;}
     .whoAmI{
         font-size: 22px;
-        top: 25%;
+        top: 30%;
     }
-    .head{
-        font-size: 14px;
-    }
-    .subhead
-    {
-        font-size: 16px;
-
-    }
+    .head{font-size: 14px;}
+    .subhead{font-size: 16px;}
     .intro{
         font-size: 12px;
         text-align: justify;
     }
-    #go{
-        font-size: 14px;
-        bottom: 10%;
-    }
-    #contact{font-size: 12px;}
-    #resume{font-size: 12px;}
-    #portfolio{font-size: 12px;}
+    .quickLinkTab{font-size: 12px;}
+    .dive{font-size: 12px;}
+    #diveIn{left: 2%;transform: translateX(0);}
+    #diveOut{left: 2%;transform: translateX(0);}
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {
@@ -233,23 +185,13 @@ section{overflow: hidden;}
         font-size: 22px;
         top: 20%;
     }
-    .head{
-        font-size: 14px;
-    }
-    .subhead
-    {
-        font-size: 16px;
-
+    .head{font-size: 14px;}
+    .subhead{font-size: 16px;
     }
     .intro{
         font-size: 12px;
         text-align: justify;
     }
-    #go{
-        font-size: 14px;
-        bottom: 10%;
-    }
-    #contact{font-size: 12px;}
-    #resume{font-size: 12px;}
-    #portfolio{font-size: 12px;}
+    .quickLinkTab{font-size: 12px;}
+    .dive{font-size: 12px;}
 }
