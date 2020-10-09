@@ -1,0 +1,32 @@
+.contentHead{
+    position: absolute;
+    left: 50%;transform: translateX(-50%);
+    top:2%;
+    font-size: 24px;font-weight: 400;color: var(--theme1-c-active);
+}
+.contentHolder{
+    position: absolute;height: 75%;width: 90%;
+    top:50%;left: 50%;transform: translate(-50%,-52%);
+    /* border: 1px dashed #FFFFFF; */
+}
+.projectImg{
+    position: absolute;
+    top:50%;transform: translateY(-50%); height: auto;
+    right: 0;width: 60%;
+    border-radius: 10px;
+}
+#pr1{content: url("../../images/web/project/2.jpg");}
+.projectDesc{
+    position: absolute;
+    top:50%;transform: translateY(-50%);
+    right: 62%;width: 25%;height: auto;
+    padding: 1%;text-align: justify;
+    color: var(--theme1-c-active);
+    border: 1px dashed #FFFFFF;
+    box-sizing: border-box;
+}
+.projNav{
+    position: absolute;
+    left: 0;width: 11%;height: 100%;
+    border: 1px dashed #FFFFFF;
+}

@@ -1,7 +1,6 @@
 :root{
-    --theme1-c1:#595959; --theme1-c2:#8C8C8C; --theme1-c3:#BFBFBF; --theme1-c4:#D9D9D9; --theme1-c5:#F2F2F2;
-    --theme1-c-hover:#FEFEFE; --theme1-c-active:#FFFFFF;
-    --paper1:#F2F2F2; --paper2:#D9D9D9; --paper3:#BFBFBF; --paper4:#595859;--paper5:#0D0D0D;
+    --theme1-c-active:#FFFFFF;--theme1-c-hover:#FEFEFE;
+    --paper1:#F2F2F2; --paper2:#D9D9D9; --paper3:#BFBFBF;--paper4:#8C8C8C; --paper5:#595859;--paper6:#0D0D0D;
     --sea1:#07B2D9; --sea2:#11a8e4; --sea3:#0568A6; --sea4:#022340; --sea5:#011322;
     --btn:#24990F;--btnHover:#2EE60E;
 }
@@ -108,12 +107,13 @@ section{overflow: hidden;}
 .dive{
     position: fixed;z-index: 2;cursor: pointer;
     padding: 10px;
-    left: 50%;transform: translateX(-50%);
+    left: 2%;
     color: var(--theme1-c-active);
     display: flex;text-align: center;justify-content: center;
     font-size: 16px;
     border-radius: 2px;
     font-weight: 400;
+    border: 0.5px solid var(--theme1-c-active);
  }
 #diveIn{bottom:2%;}
 #diveOut{top:2%;}
@@ -176,8 +176,8 @@ section{overflow: hidden;}
     }
     .quickLinkTab{font-size: 12px;}
     .dive{font-size: 12px;}
-    #diveIn{left: 2%;transform: translateX(0);}
-    #diveOut{left: 2%;transform: translateX(0);}
+    /* #diveIn{left: 2%;transform: translateX(0);}
+    #diveOut{left: 2%;transform: translateX(0);} */
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {

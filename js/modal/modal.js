@@ -1,6 +1,3 @@
-// var contact = document.getElementById("contact");
-// var contactClose = document.getElementsByClassName("close")[0];
-
 function showContactModal() {
   document.getElementById("contactModal").style.display = "grid";
 }

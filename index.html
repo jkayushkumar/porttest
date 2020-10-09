@@ -13,10 +13,12 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/material.css">
         <link rel="stylesheet" href="css/modal/modal.css">
-        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>         
-        <script type="text/javascript" src="js/particles.min.js"></script>       
+        <link rel="stylesheet" href="css/project/project.css">
+        <script type="text/javascript" src="js/bundle/jquery-3.5.1.min.js"></script>         
+        <script type="text/javascript" src="js/bundle/particles.min.js"></script>       
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/modal/modal.js"></script>
+        <script type="text/javascript" src="js/project/project.js"></script>
         <script>  
             window.onbeforeunload = function () {
                 window.scrollTo(0, 0);
@@ -24,12 +26,14 @@
         </script>
     </head>
     <body ontouchstart="">
+        <!-- quick links-------------- -->
         <div class="quickLinks">
-            <div id="resume" class="quickLinkTab ripple" onclick="showResumeModal()"">Resume</div>
+            <div id="resume" class="quickLinkTab ripple" onclick="showResumeModal()"">R&#xe9;sum&#xe9;</div>
             <div id="portfolio" class="quickLinkTab ripple">Portfolio PDF</div>
             <div id="contact" class="quickLinkTab ripple" onclick="showContactModal()">Contact</div>
         </div>
         <div id="surface">
+            <!-- intro----------------- -->
             <div class="whoAmI">Ayush Kumar
                 <p class="head">Developer | Designer</p> 
                 <p class="head">I fuse technology with creativity</p>
@@ -87,22 +91,38 @@
         <script src="js/rain.js"></script>
         <div id="diveOut"onclick="diveOUT()" class="dive ripple noDisplay">Dive Out&nbsp;&#x21e7;</div>  
         <div id="diveIn"onclick="diveIN()" class="dive ripple noDisplay">Dive In&nbsp;&#x21e9;</div>
+        <!-- underwater------------------ -->
         <div id="sea">
             <div id="depth1" class="droplets1">                
                 <div id="fishLV1" class="goldfish"></div>
                 <div id="fishLV2" class="fish2"></div>
+                <!-- project----------------- -->
+                <div id="projectHead" class="contentHead noDisplay">PROJECTS</div>
+                <div id="projectHolder" class="contentHolder noDisplay">
+                    <div class="projNav"></div>
+                    <div id="prd1" class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem distinctio accusantium modi minus dicta totam. Unde blanditiis facere nam quo dignissimos fuga, doloremque similique laborum rerum harum a laboriosam.</div>
+                    <div id="pr1" class="projectImg"></div>
+                </div>
             </div>
             <script src="js/sea.js"></script> 
             <div id="join12"></div>          
             <div id="depth2" class="droplets2">                
                 <img id="fishLV3" class="orca">
                 <div id="fishLV4" class="hammer"></div>
+                <!-- miscellaneous------------ -->
+                <div class="contentHead"></div>
+                <div class="contentHolder">
+                </div>
             </div>
             <script src="js/sea2.js"></script>
             <div id="join23"></div>
             <div id="depth3" class="droplets3">
                 <div id="fishLV4B1" class="jelly"></div>
                 <div id="fishLV4B2" class="jelly2"></div>
+                <!-- clients------------------ -->
+                <div class="contentHead">COLLABORATION</div>
+                <div class="contentHolder">
+                </div>
             </div>
             <script src="js/sea3.js"></script>
         </div>

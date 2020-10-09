@@ -41,7 +41,7 @@
   .contactImg{   
     position: absolute; 
     content: url("../../images/web/contact.png");
-    height: 40%;bottom: 10%;right:10%;
+    height: 40%;bottom: 5%;right:10%;
   }
   .contactHold{
     padding: 1%;

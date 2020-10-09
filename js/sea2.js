@@ -3,7 +3,7 @@ particlesJS('depth2',
   {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 150,
         "density": {
           "enable": true,
           "value_area": 900
