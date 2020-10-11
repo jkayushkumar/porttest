@@ -132,7 +132,6 @@ section{overflow: hidden;}
 }
 .quickLinkTab{
     float: left;padding: 10px;
-    /* border: 0.5px solid var(--theme1-c-active); */
     color: var(--theme1-c-active);
     font-size: 16px;
     font-weight: 400;
