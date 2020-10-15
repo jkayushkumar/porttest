@@ -96,10 +96,45 @@
             <div id="depth1" class="droplets1">                
                 <div id="fishLV1" class="goldfish"></div>
                 <div id="fishLV2" class="fish2"></div>
-                <!-- project----------------- -->                
-                <div id="projectHolder" class="contentHolder noDisplay">
-                    <div id="prd1" class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem distinctio accusantium modi minus dicta totam. Unde blanditiis facere nam quo dignissimos fuga, doloremque similique laborum rerum harum a laboriosam.</div>
-                    <div id="pr1" class="projectImg"></div>
+                <!-- project----------------- --> 
+                <div id="next" onclick="nextProject(1)">&#10095;</div> 
+                <div id="prev" onclick="nextProject(-1)">&#10094;</div>  
+                <!-- turbulence ---------------------- -->
+                <svg>
+                    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                      <feTurbulence id="sea-filter" numOctaves="1" seed="2" baseFrequency="0.002" type="turbulence"></feTurbulence>
+                      <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
+                      <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="20s" keyTimes="0;0.5;1" 
+                      values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
+                    </filter>
+                </svg>            
+                <div id="projectHolder" class="contentHolder prjClass noDisplay">
+                    <div id="prd1" class="projectDesc">
+                        <span class="projHead">1/3 The Sample Project</span>                        
+                        <p class="projSubHead">Smaple Project Description To be here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem distinctio accusantium modi minus dicta totam. Unde blanditiis facere nam quo dignissimos fuga, doloremque similique laborum rerum harum a laboriosam.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nihil quidem ad, dolorum, vel qui consequatur nostrum eaque eos, ut hic nesciunt adipisci. Ducimus ipsam qui sit, rerum ratione id.</p>
+                        <div class="projDetail  ripple">&nbsp;Details&nbsp;</div>
+                    </div>
+                    <div id="pr1" class="projectImg turb"></div>
+                </div>
+                <div id="projectHolder2" class="contentHolder prjClass noDisplay">
+                    <div id="prd2" class="projectDesc">
+                        <span class="projHead">2/3 The Second Project</span>                        
+                        <p class="projSubHead">Smaple Second Project Description To be here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem distinctio accusantium modi minus dicta totam. Unde blanditiis facere nam quo dignissimos fuga, doloremque similique laborum rerum harum a laboriosam.</p>
+                        <div class="projDetail  ripple">&nbsp;Details&nbsp;</div>
+                    </div>
+                    <div id="pr2" class="projectImg turb"></div>
+                </div>
+                <div id="projectHolder3" class="contentHolder prjClass noDisplay">
+                    <div id="prd2" class="projectDesc">
+                        <span class="projHead">3/3 The Third Project</span>                        
+                        <p class="projSubHead">Smaple Third Project Description To be here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem distinctio accusantium modi minus dicta totam. Unde blanditiis facere nam quo dignissimos fuga, doloremque similique laborum rerum harum a laboriosam.</p>
+                        <div class="projDetail  ripple">&nbsp;Details&nbsp;</div>
+                    </div>
+                    <div id="pr3" class="projectImg turb"></div>
                 </div>
             </div>
             <script src="js/sea.js"></script> 
@@ -108,8 +143,8 @@
                 <img id="fishLV3" class="orca">
                 <div id="fishLV4" class="hammer"></div>
                 <!-- miscellaneous------------ -->
-                <div class="contentHolder">
-                </div>
+                <!-- <div class="contentHolder">
+                </div> -->
             </div>
             <script src="js/sea2.js"></script>
             <div id="join23"></div>
@@ -117,8 +152,8 @@
                 <div id="fishLV4B1" class="jelly"></div>
                 <div id="fishLV4B2" class="jelly2"></div>
                 <!-- clients------------------ -->
-                <div class="contentHolder">
-                </div>
+                <!-- <div class="contentHolder">
+                </div> -->
             </div>
             <script src="js/sea3.js"></script>
         </div>
