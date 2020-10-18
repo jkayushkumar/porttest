@@ -1,0 +1,21 @@
+.modal-project{
+    display: none;
+    place-items: center;
+    position: fixed;z-index: 3; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: #111111; 
+    background-color:#111111a8; 
+}
+.modal-content-project{
+    position: absolute;
+    left: 50%;top: 50%; transform: translate(-50% ,-50%);
+    max-height: 90%;
+    background-color: var(--paper1);
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    padding: 5px;
+}
+#prjModalImg{max-width: 75vw;}
+.prjModalImg1{content: url("../../images/web/project/Smart_Healthcare_Solution_Poster.png");}

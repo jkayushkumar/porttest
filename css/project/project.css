@@ -8,18 +8,16 @@
     position: absolute;
     width: 70vw;height:30.3VW ; /*16(+30% of 16) : 9 aspect ratio h = 0.433*width  */
     top:50%;left: 50%;transform: translate(-50%,-52%);
+    animation: appear 1s ease-in;
 }
-.prjClass{
-    transition: all 1.5s;
-    /* transition-delay: 1s; */
-}
+.prjClass{transition: all 3s;}
 .projectImg{
     position: absolute;right: 0;
     width: 70%;height: 100%;
     border-radius: 10px;   
 }
 .turb{ filter: url("#turbulence");}
-#pr1{content: url("../../images/web/project/2.jpg");}
+#pr1{content: url("../../images/web/project/bookcover.png");}
 #pr2{content: url("../../images/web/project/4.jpg");}
 #pr3{content: url("../../images/web/project/8.jpg");}
 #next{
@@ -50,3 +48,5 @@
     cursor: pointer;
     padding: 10px;border-radius: 2px;
 }
+
+@keyframes appear { 0% {opacity: 0;} 100% {opacity: 1;}	}
