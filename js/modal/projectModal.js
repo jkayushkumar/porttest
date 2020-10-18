@@ -12,4 +12,3 @@ function showProjectModal(projNo) {
             break;
     }
 }
-

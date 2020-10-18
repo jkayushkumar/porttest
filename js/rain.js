@@ -1,5 +1,4 @@
 particlesJS('surface',
-  
   {
     "particles": {
       "number": {
@@ -107,7 +106,7 @@ particlesJS('surface',
         }
       }
     },
-    "retina_detect": true,    
+    "retina_detect": true,
   }
 
 );

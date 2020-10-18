@@ -8,7 +8,7 @@ function showResumeModal() {
 
 window.onclick = function (event) {
   if (event.target == document.getElementById("contactModal") || event.target == document.getElementById("resumeModal")
-  || event.target == document.getElementById("projectModal")) {
+    || event.target == document.getElementById("projectModal")) {
     document.getElementById("contactModal").style.display = "none";
     document.getElementById("resumeModal").style.display = "none";
     document.getElementById("projectModal").style.display = "none";

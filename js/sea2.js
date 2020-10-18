@@ -1,5 +1,4 @@
 particlesJS('depth2',
-  
   {
     "particles": {
       "number": {
@@ -107,7 +106,7 @@ particlesJS('depth2',
         }
       }
     },
-    "retina_detect": true,    
+    "retina_detect": true,
   }
 
 );
