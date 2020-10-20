@@ -1,4 +1,4 @@
-.modal-project{
+.modal-misc{
     display: none;
     place-items: center;
     position: fixed;z-index: 3; 
@@ -7,7 +7,7 @@
     background-color: #111111; 
     background-color:#111111a8; 
 }
-.modal-content-project{
+.modal-content-misc{
     position: absolute;
     left: 50%;top: 50%; transform: translate(-50% ,-50%);
     max-height: 90%;
@@ -17,4 +17,4 @@
     overflow-y: auto;
     padding: 5px;
 }
-#prjModalImg{max-width: 70vw;}
+#miscModalImg{max-width: 70vw;}

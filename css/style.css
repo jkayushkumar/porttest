@@ -30,7 +30,10 @@ section{overflow: hidden;}
 #surface{
     position: absolute;z-index: 0;
     height: 85.5%;width: 100%;top: 0;
-    background-image: linear-gradient(#010825,#1e2949,#3d5183,#2d8cea);
+    background-image:url("../images/web/sky.png");
+    /* background-image: linear-gradient(#010825,#2d8cea); */
+    /* background-image: linear-gradient(#010825,#1e2949,#3d5183,#2d8cea); */
+    /* background-image: linear-gradient(#f1cfa2,#f3eac3,#b2d7b6,#94d8a9); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +163,9 @@ section{overflow: hidden;}
 
 /* mobile portrait */
 @media only screen and (max-width: 567px){
+    #surface{
+        background-image: url("../images/mob/sky.png");
+    }
     #sea{ bottom: 0;}
     .particles-js-canvas-el { height: 100% !important; }
     #sailboat{height: 30%;}
@@ -180,6 +186,9 @@ section{overflow: hidden;}
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {
+    #surface{
+        background-image: url("../images/mob/sky.png");
+    }
     .whoAmI{
         font-size: 22px;
         top: 20%;
