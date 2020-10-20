@@ -79,18 +79,13 @@ section{overflow: hidden;}
 }
 #join23{
     position: absolute;z-index: -1;
-    height: 4vh;width: 100%;
+    height: 10vh;width: 100%;
     top: 66%;
     background-color: var(--sea4);
 }
 #depth3{
     height: 101vh;
     width: 100%;
-}
-#depth4{
-    height: 101vh;
-    width: 100%;
-    background-color: var(--sea5);
 }
 .ontop{padding: 10px;}
 .droplets1{
@@ -101,14 +96,13 @@ section{overflow: hidden;}
 }
 .droplets2{
     position: absolute;top: 33.33%;
-    /* background-image:url("../images/web/webDepth2_2.png"); */
     background-image: linear-gradient(var(--sea3),var(--sea4));
     background-size: 100% 100%;
 }
 
 .droplets3{
-    position: absolute;top: 66.66%;
-    /* background-image:url("../images/web/webDepth3_2.png"); */
+    position: absolute;bottom: 0;
+    /* top: 66.66%; */
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
@@ -148,8 +142,6 @@ section{overflow: hidden;}
     cursor: pointer;
     border-radius: 2px;
 }
-/* #contact{margin-left: 10px;}
-#portfolio{margin-left: 10px;} */
 .ripple {
     background-position: center;
     transition: background 0.6s;
