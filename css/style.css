@@ -125,7 +125,7 @@ section{overflow: hidden;}
     position: absolute;
     left: 50%;transform: translateX(-50%);
     min-width: fit-content;
-    background-image: linear-gradient(var(--sea1),var(--sea2));
+    background-color: var(--sea1);
     border-radius: 2px;
 }
 .quickLinks{

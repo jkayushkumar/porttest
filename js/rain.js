@@ -18,7 +18,7 @@ particlesJS('surface',
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 3
+          "nb_sides": 10
         },
         "image": {
           "src": "img/github.svg",
@@ -48,18 +48,18 @@ particlesJS('surface',
         }
       },
       "line_linked": {
-        "enable": false,
+        "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "opacity": 0.3,
+        "width": 0.6
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 2,
         "direction": "none",
         "random": true,
-        "straight": true,
+        "straight": false,
         "out_mode": "out",
         "attract": {
           "enable": false,
