@@ -67,18 +67,6 @@ section{overflow: hidden;}
     height: 101vh;width: 100%;
     background-color: var(--sea5);
 }
-/* #join12{
-    position: absolute;z-index: -1;
-    height: 4vh;width: 100%;
-    top: 33%;
-    background-color: var(--sea3);
-}
-#join23{
-    position: absolute;z-index: -1;
-    height: 10vh;width: 100%;
-    top: 66%;
-    background-color: var(--sea4);
-} */
 .droplets1{
     position: absolute;
     top: 0;
@@ -93,7 +81,7 @@ section{overflow: hidden;}
 }
 .droplets3{
     position: absolute;
-    top: 200vh;
+    top: 190vh;
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
