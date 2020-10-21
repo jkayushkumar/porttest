@@ -150,7 +150,7 @@ section{overflow: hidden;}
     .dive{font-size: 12px;}
 }
 /* mobile landscape, tab */
-@media only screen and (min-width: 568px) and (max-width: 1024px) {
+@media only screen and (min-width: 568px) and (max-width: 1024px){
     #surface{background-image: url("../images/mob/sky.png");}
     .whoAmI{top: 20%;}
     .whoAmI{font-size: 20px;}
