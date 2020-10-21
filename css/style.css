@@ -2,7 +2,6 @@
     --theme1-c-active:#FFFFFF;--theme1-c-hover:#FEFEFE;
     --paper1:#F2F2F2; --paper2:#D9D9D9; --paper3:#BFBFBF;--paper4:#8C8C8C; --paper5:#595859;--paper6:#0D0D0D;
     --sea1:#07B2D9; --sea2:#11a8e4; --sea3:#0568A6; --sea4:#022340; --sea5:#011322;
-    --btn:#24990F;--btnHover:#2EE60E;
 }
 body{
     overflow-x:hidden;
@@ -164,40 +163,28 @@ section{overflow: hidden;}
     /* #surface{
         background-image: url("../images/mob/sky.png");
     } */
-    #sea{ bottom: 0;}
-    .particles-js-canvas-el { height: 100% !important; }
+    #depth1{height: 101%;}
+    #depth2{height: 101%;}
+    #depth3{height: 101%;}
     #sailboat{height: 30%;}
-    .whoAmI{
-        font-size: 22px;
-        top: 30%;
-    }
+    .whoAmI{font-size: 22px;top: 30%;}
     .head{font-size: 14px;}
     .subhead{font-size: 16px;}
-    .intro{
-        font-size: 12px;
-        text-align: justify;
-    }
+    .intro{font-size: 12px;text-align: justify;}
     .quickLinkTab{font-size: 12px;}
+    #sea{ bottom: 0;}
+    .particles-js-canvas-el { height: 100% !important; }
     .dive{font-size: 12px;}
-    /* #diveIn{left: 2%;transform: translateX(0);}
-    #diveOut{left: 2%;transform: translateX(0);} */
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {
     /* #surface{
         background-image: url("../images/mob/sky.png");
     } */
-    .whoAmI{
-        font-size: 22px;
-        top: 20%;
-    }
+    .whoAmI{font-size: 22px;top: 20%;}
     .head{font-size: 14px;}
-    .subhead{font-size: 16px;
-    }
-    .intro{
-        font-size: 12px;
-        text-align: justify;
-    }
+    .subhead{font-size: 16px;}
+    .intro{font-size: 12px;text-align: justify;}
     .quickLinkTab{font-size: 12px;}
     .dive{font-size: 12px;}
 }
