@@ -1,9 +1,3 @@
-/* .contentHead{
-    position: absolute;
-    left: 50%;transform: translateX(-50%);
-    top:2%;
-    font-size: 24px;font-weight: 400;color: var(--theme1-c-active);
-} */
 .contentHolder{
     position: absolute;
     width: 70vw;height:30.3VW ; /*16(+30% of 16) : 9 aspect ratio h = 0.433*width  */

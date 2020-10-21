@@ -20,12 +20,14 @@ function diveIN() {
             $('html, body').animate({ scrollTop: $("#depth1").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#0da3d5";
+                document.body.style.backgroundColor="#0da3d5";
                 document.getElementById("surface").classList.add("noDisplay");
                 document.getElementById("diveOut").classList.remove("noDisplay");
                 document.getElementById("diveIn").classList.remove("noClick");
                 document.getElementById("diveIn").classList.remove("noDisplay");
                 document.getElementById("projectHolder").classList.remove("noDisplay");
-                // document.getElementById("projectHead").classList.remove("noDisplay"); 
+                document.getElementById("projectHolder2").classList.add("noDisplay");
+                document.getElementById("projectHolder3").classList.add("noDisplay");
                 updatingCSS = false;
             }, 1500);
 
@@ -38,6 +40,7 @@ function diveIN() {
             $('html, body').animate({ scrollTop: $("#depth2").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#0568A6";
+                document.body.style.backgroundColor="#0568A6";
                 document.getElementById("depth1").classList.add("noDisplay");
                 document.getElementById("diveIn").classList.remove("noClick");
                 updatingCSS = false;
@@ -52,6 +55,7 @@ function diveIN() {
             $('html, body').animate({ scrollTop: $("#depth3").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#022340";
+                document.body.style.backgroundColor="#022340";
                 document.getElementById("depth2").classList.add("noDisplay");
                 document.getElementById("diveIn").classList.remove("noClick");
                 updatingCSS = false;
@@ -77,10 +81,13 @@ function diveOUT() {
             document.getElementById("depth3").classList.remove("ontop");
             document.getElementById("diveOut").classList.add("noDisplay");
             document.getElementById("projectHolder").classList.add("noDisplay");
+            document.getElementById("projectHolder2").classList.add("noDisplay");
+            document.getElementById("projectHolder3").classList.add("noDisplay");
             document.getElementById("diveIn").classList.add("noDisplay");
             $('html, body').animate({ scrollTop: $("#surface").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#1d2097";
+                document.body.style.backgroundColor="#1d2097";
                 document.getElementById("diveOut").classList.remove("noClick");
                 updatingCSS = false;
             }, 1500);
@@ -94,6 +101,7 @@ function diveOUT() {
             $('html, body').animate({ scrollTop: $("#depth1").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#0da3d5";
+                document.body.style.backgroundColor="#0da3d5";
                 document.getElementById("depth2").classList.add("noDisplay");
                 document.getElementById("depth3").classList.add("noDisplay");
                 document.getElementById("diveOut").classList.remove("noClick");
@@ -109,6 +117,7 @@ function diveOUT() {
             $('html, body').animate({ scrollTop: $("#depth2").offset().top }, 1500);
             window.setTimeout(function () {
                 document.getElementsByTagName('meta')["theme-color"].content = "#0568A6";
+                document.body.style.backgroundColor="#0568A6";
                 document.getElementById("depth1").classList.add("noDisplay");
                 document.getElementById("depth3").classList.add("noDisplay");
                 document.getElementById("diveOut").classList.remove("noClick");
