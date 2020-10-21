@@ -10,10 +10,7 @@ body{
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
 }
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
+::-webkit-scrollbar { width: 0px; background: transparent; }
 input,textarea,button,select,a,div,img {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 section{overflow: hidden;}
 .whoAmI{
@@ -44,7 +41,7 @@ section{overflow: hidden;}
 }
 .seaWave{
     position: absolute;z-index: -2;
-    height: 3%;width: 100%;bottom: 0;
+    height: 3%;width: 105%;bottom: 0;left: -2.5%;
     background-image: url("../images/web/surfaceWave.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
