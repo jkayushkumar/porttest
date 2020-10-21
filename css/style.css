@@ -5,10 +5,14 @@
     --btn:#24990F;--btnHover:#2EE60E;
 }
 body{
-    overflow:hidden;
+    overflow-x:hidden;
     margin: 0; padding: 0;
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 input,textarea,button,select,a,div,img {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 section{overflow: hidden;}
@@ -29,7 +33,7 @@ section{overflow: hidden;}
 }
 #surface{
     position: absolute;z-index: 0;
-    height: 95.5%;width: 100%;top: 0;
+    height: 85.5%;width: 100%;top: 0;
     background-image:url("../images/web/sky.png");
     /* background-image: linear-gradient(#010825,#2d8cea); */
     /* background-image: linear-gradient(#010825,#1e2949,#3d5183,#2d8cea); */
@@ -59,7 +63,7 @@ section{overflow: hidden;}
     position: absolute;z-index: 1;
     width: 100%;
     height: 300%;
-    top: 95%;
+    top: 85%;
     transition: background 1.5s ease-in-out;
     background-size: 100% 100%;
 }
