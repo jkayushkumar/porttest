@@ -7,7 +7,7 @@ body{
     overflow:hidden;
     margin: 0; padding: 0;
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
-    font-size: 0.8rem;font-weight: 400;    
+    font-size: 14px;font-weight: 300;    
 }
 ::-webkit-scrollbar { width: 0px; background: transparent; }
 input,textarea,button,select,a,div,img {-webkit-tap-highlight-color: rgba(0,0,0,0);}
@@ -17,13 +17,13 @@ section{overflow: hidden;}
     left: 50%;transform: translateX(-50%);
     width: 100%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 34px;
     font-weight: 300;
     color: var(--theme1-c-active);
 }
-.head{font-size: 1.8rem;}
-.subhead{font-size: 1.6rem;}
-.intro{font-size: 1.6rem;text-align: justify;}
+.head{font-size: 22px;}
+.subhead{font-size: 20px;}
+.intro{font-size: 20px;text-align: justify;}
 #surface{
     position: absolute;z-index: 0;
     height: 90.5%;width: 100%;top: 0;
@@ -91,9 +91,9 @@ section{overflow: hidden;}
     left: 2%;
     color: var(--theme1-c-active);
     display: flex;text-align: center;justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 300;
     border-radius: 2px;
-    font-weight: 400;
     border: 0.5px solid var(--theme1-c-active);
  }
 #diveOut{top:2%;}
@@ -114,8 +114,8 @@ section{overflow: hidden;}
 .quickLinkTab{
     float: left;padding: 10px;
     color: var(--theme1-c-active);
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     text-align: center;
     display: flex;justify-content: center;
     cursor: pointer;
@@ -143,9 +143,20 @@ section{overflow: hidden;}
     #sailboat{height: 30%;}
     #sea{ bottom: 0;}
     .particles-js-canvas-el { height: 100% !important; }
+    .whoAmI{font-size: 22px;}
+    .head{font-size: 14px;}
+    .subhead{font-size: 14px;}
+    .quickLinkTab{font-size: 12px;}
+    .dive{font-size: 12px;}
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {
     #surface{background-image: url("../images/mob/sky.png");}
     .whoAmI{top: 20%;}
+    .whoAmI{font-size: 20px;}
+    .whoAmI{font-size: 22px;}
+    .head{font-size: 14px;}
+    .subhead{font-size: 14px;}
+    .quickLinkTab{font-size: 12px;}
+    .dive{font-size: 12px;}
 }
