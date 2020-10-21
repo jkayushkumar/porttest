@@ -1,8 +1,8 @@
 window.onload = function () {
-    // window.setTimeout(function () {
-    //     document.getElementById("depth2").classList.add("noDisplay");
-    //     document.getElementById("depth3").classList.add("noDisplay");
-    // }, 1000);
+    window.setTimeout(function () {
+        document.getElementById("depth2").classList.add("noDisplay");
+        document.getElementById("depth3").classList.add("noDisplay");
+    }, 1000);
 }
 var updatingCSS = false;
 function diveIN() {

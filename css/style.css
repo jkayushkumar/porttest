@@ -55,14 +55,19 @@ section{overflow: hidden;}
 #sea{
     position: absolute;z-index: 1;
     width: 100%;
-    height: 350vh;
+    height: 400vh;
     top: 90%;
     background-size: 100% 100%;
 }
 #depth1{height: 101vh;width: 100%;}
 #depth2{height: 101vh;width: 100%;}
 #depth3{height: 101vh;width: 100%;}
-#join12{
+#depth4{
+    position: absolute;top: 300vh;
+    height: 101vh;width: 100%;
+    background-color: var(--sea5);
+}
+/* #join12{
     position: absolute;z-index: -1;
     height: 4vh;width: 100%;
     top: 33%;
@@ -73,8 +78,7 @@ section{overflow: hidden;}
     height: 10vh;width: 100%;
     top: 66%;
     background-color: var(--sea4);
-}
-.ontop{padding: 10px;}
+} */
 .droplets1{
     position: absolute;
     top: 0;
@@ -87,13 +91,13 @@ section{overflow: hidden;}
     background-image: linear-gradient(var(--sea3),var(--sea4));
     background-size: 100% 100%;
 }
-
 .droplets3{
     position: absolute;
     top: 200vh;
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
+.ontop{padding: 10px;}
 .dive{
     position: fixed;z-index: 2;cursor: pointer;
     padding: 10px;
@@ -149,9 +153,6 @@ section{overflow: hidden;}
 /* mobile portrait */
 @media only screen and (max-width: 567px){
     #surface{background-image: url("../images/mob/sky.png");}
-    /* #depth1{height: 101%;}
-    #depth2{height: 101%;}
-    #depth3{height: 101%;} */
     #sailboat{height: 30%;}
     .whoAmI{font-size: 22px;top: 30%;}
     .head{font-size: 14px;}
