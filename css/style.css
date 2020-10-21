@@ -23,10 +23,7 @@ section{overflow: hidden;}
 }
 .head{font-size: 24px;}
 .subhead{font-size: 28px;}
-.intro{
-    font-size: 16px;
-    text-align: justify;
-}
+.intro{font-size: 16px;text-align: justify;}
 #surface{
     position: absolute;z-index: 0;
     height: 90.5%;width: 100%;top: 0;
@@ -60,22 +57,16 @@ section{overflow: hidden;}
     width: 100%;
     height: 300%;
     top: 90%;
-    transition: background 1.5s ease-in-out;
     background-size: 100% 100%;
 }
-#depth1{
-    height: 101vh;
-    width: 100%;
-}
+#depth1{height: 101vh;width: 100%;}
+#depth2{height: 101vh;width: 100%;}
+#depth3{height: 101vh;width: 100%;}
 #join12{
     position: absolute;z-index: -1;
     height: 4vh;width: 100%;
     top: 33%;
     background-color: var(--sea3);
-}
-#depth2{
-    height: 101vh;
-    width: 100%;
 }
 #join23{
     position: absolute;z-index: -1;
@@ -83,15 +74,10 @@ section{overflow: hidden;}
     top: 66%;
     background-color: var(--sea4);
 }
-#depth3{
-    height: 101vh;
-    width: 100%;
-}
 .ontop{padding: 10px;}
 .droplets1{
     position: absolute;top: 0;
     background-image:url("../images/web/webDepth1.png");
-    /* background-image: linear-gradient(#C0B2A7,#95A7A0,#609297,#609297,#609297,#609297); */
     background-size: 100% 100%;
 }
 .droplets2{
@@ -101,8 +87,8 @@ section{overflow: hidden;}
 }
 
 .droplets3{
-    position: absolute;bottom: 0;
-    /* top: 66.66%; */
+    position: absolute;
+    top: 66.66%;
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
@@ -117,8 +103,8 @@ section{overflow: hidden;}
     font-weight: 400;
     border: 0.5px solid var(--theme1-c-active);
  }
-#diveIn{bottom:2%;}
 #diveOut{top:2%;}
+#diveIn{bottom:2%;}
 .noClick{pointer-events:none;}
 .explore{
     position: absolute;
@@ -160,12 +146,10 @@ section{overflow: hidden;}
 
 /* mobile portrait */
 @media only screen and (max-width: 567px){
-    /* #surface{
-        background-image: url("../images/mob/sky.png");
-    } */
-    #depth1{height: 101%;}
+    #surface{background-image: url("../images/mob/sky.png");}
+    /* #depth1{height: 101%;}
     #depth2{height: 101%;}
-    #depth3{height: 101%;}
+    #depth3{height: 101%;} */
     #sailboat{height: 30%;}
     .whoAmI{font-size: 22px;top: 30%;}
     .head{font-size: 14px;}
@@ -173,14 +157,12 @@ section{overflow: hidden;}
     .intro{font-size: 12px;text-align: justify;}
     .quickLinkTab{font-size: 12px;}
     #sea{ bottom: 0;}
-    .particles-js-canvas-el { height: 100% !important; }
     .dive{font-size: 12px;}
+    .particles-js-canvas-el { height: 100% !important; }
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px) {
-    /* #surface{
-        background-image: url("../images/mob/sky.png");
-    } */
+    #surface{background-image: url("../images/mob/sky.png");}
     .whoAmI{font-size: 22px;top: 20%;}
     .head{font-size: 14px;}
     .subhead{font-size: 16px;}
