@@ -57,7 +57,7 @@ section{overflow: hidden;}
     width: 100%;
     height: 350vh;
     top: 90%;
-    background-size: 100% 100%;
+    background-color: var(--sea4);
 }
 #depth1{height: 101vh;width: 100%;}
 #depth2{height: 101vh;width: 100%;}
