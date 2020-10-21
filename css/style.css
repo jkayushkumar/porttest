@@ -4,7 +4,7 @@
     --sea1:#07B2D9; --sea2:#11a8e4; --sea3:#0568A6; --sea4:#022340; --sea5:#011322;
 }
 body{
-    overflow:hidden;
+    overflow-x:hidden;
     margin: 0; padding: 0;
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
@@ -76,19 +76,21 @@ section{overflow: hidden;}
 }
 .ontop{padding: 10px;}
 .droplets1{
-    position: absolute;top: 0;
+    position: absolute;
+    top: 0;
     background-image:url("../images/web/webDepth1.png");
     background-size: 100% 100%;
 }
 .droplets2{
-    position: absolute;top: 33.33%;
+    position: absolute;
+    top: 33%;
     background-image: linear-gradient(var(--sea3),var(--sea4));
     background-size: 100% 100%;
 }
 
 .droplets3{
     position: absolute;
-    top: 66.66%;
+    top: 66%;
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
