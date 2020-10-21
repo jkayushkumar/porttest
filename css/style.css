@@ -4,7 +4,7 @@
     --sea1:#07B2D9; --sea2:#11a8e4; --sea3:#0568A6; --sea4:#022340; --sea5:#011322;
 }
 body{
-    overflow-x:hidden;
+    overflow:hidden;
     margin: 0; padding: 0;
     font-family:Roboto,'Open Sans','Source Sans Pro','Work Sans','Segoe UI', Tahoma, sans-serif;
     font-size: 14px;font-weight: 400;
