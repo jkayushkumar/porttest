@@ -55,7 +55,7 @@ section{overflow: hidden;}
 #sea{
     position: absolute;z-index: 1;
     width: 100%;
-    height: 300%;
+    height: 350vh;
     top: 90%;
     background-size: 100% 100%;
 }
@@ -83,14 +83,14 @@ section{overflow: hidden;}
 }
 .droplets2{
     position: absolute;
-    top: 33%;
+    top: 100vh;
     background-image: linear-gradient(var(--sea3),var(--sea4));
     background-size: 100% 100%;
 }
 
 .droplets3{
     position: absolute;
-    top: 66%;
+    top: 200vh;
     background-image: linear-gradient(var(--sea4),var(--sea5));
     background-size: 100% 100%;
 }
