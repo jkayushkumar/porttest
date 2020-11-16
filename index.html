@@ -2,9 +2,11 @@
 <html>
 
 <head>
+    <meta name="description" CONTENT="Ayush Kumar | Designer, Developer | UX/UI Design | Web App Development | India">
+    <meta name="robots" content="index,follow">
     <meta name="viewport" content="user-scalable=no, width=device-width,height=device-height, initial-scale=1.0" />
     <meta name="theme-color" content='#1d2097' />
-    <link rel="icon" href="images/logo/profile.PNG">
+    <link rel="icon" href="images/logo/ayush.png">
     <title>Ayush</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600" />
@@ -38,10 +40,21 @@
         <div id="portfolio" class="quickLinkTab ripple">Portfolio PDF</div>
         <div id="contact" class="quickLinkTab ripple" onclick="showContactModal()">Contact</div>
     </div>
+    <!-- turbulence ---------------------- -->
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence id="sea-filter" numOctaves="1" seed="2" baseFrequency="0.002" type="turbulence">
+            </feTurbulence>
+            <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
+            <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="20s" keyTimes="0;0.5;1"
+                values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+        </filter>
+    </svg>
     <div id="surface">
+        <div class="logoMain"></div>
         <!-- intro----------------- -->
         <div class="whoAmI">Ayush Kumar
-            <p class="head">Developer | Designer</p>
+            <p class="head">Designer | Developer</p>
             <p class="subhead">I fuse technology with creativity</p>
             <P class="intro noDisplay"></p>
             <div class="explore">
@@ -97,6 +110,7 @@
     <script src="js/rain.js"></script>
     <div id="diveOut" onclick="diveOUT()" class="dive ripple noDisplay">Dive Out&nbsp;&#x21e7;</div>
     <div id="diveIn" onclick="diveIN()" class="dive ripple noDisplay">Dive In&nbsp;&#x21e9;</div>
+    <div id="copyright">Copyright <sup>&#169;</sup> 2020 Ayush Kumar. All Rights Reserved.</div>
     <!-- underwater------------------ -->
     <div id="sea">
         <div id="depth1" class="droplets1">
@@ -105,16 +119,6 @@
             <!-- project----------------- -->
             <div id="next" onclick="nextProject(1)">&#10095;</div>
             <div id="prev" onclick="nextProject(-1)">&#10094;</div>
-            <!-- turbulence ---------------------- -->
-            <svg>
-                <filter id="turbulence" x="0" y="0" width="100%" height="100%">
-                    <feTurbulence id="sea-filter" numOctaves="1" seed="2" baseFrequency="0.002" type="turbulence">
-                    </feTurbulence>
-                    <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
-                    <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="20s" keyTimes="0;0.5;1"
-                        values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
-                </filter>
-            </svg>
             <div id="projectHolder" class="contentHolder prjClass noDisplay">
                 <div id="prd1" class="projectDesc">
                     <span class="projHead">1/3 The Sample Project</span>
@@ -153,7 +157,6 @@
             </div>
         </div>
         <script src="js/sea.js"></script>
-        <!-- <div id="join12"></div> -->
         <div id="depth2" class="droplets2">
             <img id="fishLV3" class="orca">
             <div id="fishLV4" class="hammer"></div>
@@ -162,7 +165,6 @@
                 </div> -->
         </div>
         <script src="js/sea2.js"></script>
-        <!-- <div id="join23"></div> -->
         <div id="depth3" class="droplets3">
             <div id="fishLV4B1" class="jelly"></div>
             <div id="fishLV4B2" class="jelly2"></div>

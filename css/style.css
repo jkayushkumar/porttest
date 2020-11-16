@@ -35,6 +35,14 @@ section{overflow: hidden;}
     background-repeat: no-repeat;
     background-position: center;
 }
+.logoMain{
+    content: url("../images/logo/ayushWhite.png");
+    height: 110%;width: auto;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-55%,-50%);
+    opacity: .1;
+}
 .seaWave{
     position: absolute;z-index: -2;
     height: 3%;width: 105%;bottom: 0;left: -2.5%;
@@ -98,6 +106,15 @@ section{overflow: hidden;}
  }
 #diveOut{top:2%;}
 #diveIn{bottom:2%;}
+#copyright{
+    position: fixed;z-index: 2;
+    font-size: 12px;
+    color: var(--theme1-c-active);
+    font-weight: 300;
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+}
 .noClick{pointer-events:none;}
 .explore{
     position: absolute;
@@ -140,6 +157,11 @@ section{overflow: hidden;}
 /* mobile portrait */
 @media only screen and (max-width: 567px){
     #surface{background-image: url("../images/mob/sky.png");}
+    .logoMain{
+        width:99%;
+        height: auto!important;
+        transform: translate(-50%,-50%);
+    }
     #sailboat{height: 30%;}
     #sea{ bottom: 0;}
     .particles-js-canvas-el { height: 100% !important; }
@@ -148,6 +170,7 @@ section{overflow: hidden;}
     .subhead{font-size: 14px;}
     .quickLinkTab{font-size: 12px;}
     .dive{font-size: 12px;}
+    #copyright{font-size: 10px;right: 5px;}
 }
 /* mobile landscape, tab */
 @media only screen and (min-width: 568px) and (max-width: 1024px){
