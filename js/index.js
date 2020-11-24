@@ -83,6 +83,7 @@ function diveOUT() {
             document.getElementById("projectHolder").classList.add("noDisplay");
             document.getElementById("projectHolder2").classList.add("noDisplay");
             document.getElementById("projectHolder3").classList.add("noDisplay");
+            document.getElementById("projectHolder4").classList.add("noDisplay");
             document.getElementById("diveIn").classList.add("noDisplay");
             $('html, body').animate({ scrollTop: $("#surface").offset().top }, 1500);
             window.setTimeout(function () {
