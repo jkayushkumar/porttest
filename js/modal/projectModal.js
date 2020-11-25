@@ -8,7 +8,10 @@ function showProjectModal(projNo) {
             document.getElementById("prjModalImg").style.content = "url(\"images/web/project/10.jpg\")";
             break;
         case 3:
-            document.getElementById("prjModalImg").style.content = "url(\"images/web/project/7.jpg\")";
+            document.getElementById("prjModalImg").style.content = "url(\"images/web/project/prjKafka.png\")";
+            break;
+        case 4:
+            document.getElementById("prjModalImg").style.content = "url(\"images/web/project/prjKafka.png\")";
             break;
     }
 }
