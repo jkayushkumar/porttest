@@ -1,48 +1,114 @@
-a{color:#FFFFFF ;}
-.contentHolder{
-    position: absolute;
-    width: 70vw;height:30.3VW ; /*16(+30% of 16) : 9 aspect ratio h = 0.433*width  */
-    top:50%;left: 50%;transform: translate(-50%,-52%);
-    animation: appear 1s ease-in;
-}
-.prjClass{transition: all 3s;}
-.projectImg{
-    position: absolute;right: 0;
-    width: 70%;height: 100%;
-    border-radius: 10px;   
-}
-.turb{ filter: url("#turbulence");}
-#pr1{content: url("../../images/web/project/inclu.jpeg");}
-#pr2{content: url("../../images/web/project/digiAssist.jpeg");}
-#pr3{content: url("../../images/web/project/kafka.jpeg");}
-#pr4{content: url("../../images/web/project/ayush.jpeg");}
-#next{
-    position: absolute;top: 50%;right: 12vw;
-    color: #FFFFFF;font-size: 30px;font-weight: 600;
-    cursor: pointer;
-}
-#prev{
-    position: absolute;top: 50%;left: 12vw;
-    color: #FFFFFF;font-size: 30px;font-weight: 600;
-    cursor: pointer;
-}
-.projectDesc{
-    position: absolute; left: 0;
-    width: 30%;height: 100%;
-    padding-top:0;padding-left: 0;padding-right: 2%;
-    text-align: justify;font-size: 1vw;font-weight: 300;
-    color: var(--theme1-c-active);    
-    box-sizing: border-box;   
-}
-.projHead{font-size: 1.5vw; font-weight: 400;}
-.projSubHead{font-size: 1.25vw; font-weight: 300;}
-.projDetail{
-    position: absolute; bottom: 1%;
-    left: 50%;transform: translateX(-50%);
-    font-size: 1vw;font-weight: 400;color: var(--theme1-c-active);
-    background-color:var(--sea1);
-    cursor: pointer;
-    padding: 10px;border-radius: 2px;
+a {
+    color: #FFFFFF;
 }
 
-@keyframes appear { 0% {opacity: 0;} 100% {opacity: 1;}	}
+.contentHolder {
+    position: absolute;
+    width: 70vw;
+    height: 30.3VW;
+    /*16(+30% of 16) : 9 aspect ratio h = 0.433*width  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    animation: appear 1s ease-in;
+}
+
+.prjClass {
+    transition: all 3s;
+}
+
+.projectImg {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.turb {
+    filter: url("#turbulence");
+}
+
+#pr1 {
+    content: url("../../images/web/project/inclu.jpeg");
+}
+
+#pr2 {
+    content: url("../../images/web/project/digiAssist.jpeg");
+}
+
+#pr3 {
+    content: url("../../images/web/project/kafka.jpeg");
+}
+
+#pr4 {
+    content: url("../../images/web/project/ayush.jpeg");
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 12vw;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 12vw;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.projectDesc {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 2%;
+    text-align: justify;
+    font-size: 1vw;
+    font-weight: 300;
+    color: var(--theme1-c-active);
+    box-sizing: border-box;
+}
+
+.projHead {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.projSubHead {
+    font-size: 1.25vw;
+    font-weight: 300;
+}
+
+.projDetail {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    font-weight: 400;
+    color: var(--theme1-c-active);
+    background-color: var(--sea1);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
